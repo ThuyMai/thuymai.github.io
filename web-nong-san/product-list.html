@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product List</title>
+    <link rel="import" href="importLib.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <script src="materialize/js/materialize.min.js"></script>
+</head>
+<body>
+
+<header id="header">
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-2 navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header rga-black-strong" style="font-weight: 300; font-family: Arial">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse " id="my-navbar">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="/" class="waves-effect waves-light"
+                           style="font-size: 28px; font-family: Arial"><i class="fa fa-home left fa-lg">Chợ nông sản</i>
+                    </a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="/gio-hang" class="waves-effect waves-light">Giỏ hàng<i
+                            class="fa fa-shopping-cart right"></i></a></li>
+                    <li><a href=""><i class="fa fa-bars right"></i>Menu</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group  waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation ./-->
+</header>
+
+<!-- Section: Intro Image -->
+<section class="full-bg-img2" >
+</section>
+<!--Section: Intro Image ./-->
+
+
+<!--Danh mục chính-->
+<main class="container-fluid">
+    <div class="divider-new">Danh sách sản phẩm</div>
+    <div class="list">
+        <!-- Left Side: For Sorting-->
+            <div class="col-md-2">
+
+                <!--Sort Date: radio-->
+                <div class="sort container-fluid">
+                    <div class="divider-new sort-content">
+                        <h6 class="h6-responsive">Sắp xếp</h6>
+                    </div>
+                    <form class="categories ">
+                        <p>
+                            <input name="group1" type="radio" id="cat-0" checked/>
+                            <label for="cat-2">Nhiều người mua</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="cat-1" />
+                            <label for="cat-1">Ngày mới nhất</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="cat-2" />
+                            <label for="cat-2">Giá tăng dần</label>
+                        </p>
+                        <p>
+                            <input name="group1" type="radio" id="cat-3" />
+                            <label for="cat-2">Theo tên A-Z</label>
+                        </p>
+
+                    </form>
+
+                </div>
+                <!--Sort Date: radio ./-->
+
+                <!--Sorting Area: checkbox-->
+                <div class="sort container-fluid">
+                    <div class="divider-new sort-content">
+                        <h6 class="h6-responsive">Địa điểm</h6>
+                    </div>
+
+                    <form class="categories ">
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-11" checked/>
+                            <label for="cat-11">Miền Bắc<span>(15)</span> </label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-12" checked/>
+                            <label for="cat-12">Miền Trung<span>(5)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-13" checked/>
+                            <label for="cat-13">Miền Nam<span>(10)</span></label>
+                        </p>
+
+                    </form>
+
+                </div>
+                <!--Sorting Area: checkbox ./-->
+
+                <!--Sorting Type: checkbox-->
+                <div class="sort container-fluid">
+                    <div class="divider-new sort-content">
+                        <h6 class="h6-responsive">Loại hàng</h6>
+                    </div>
+
+                    <form class="categories ">
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-20" checked/>
+                            <label for="cat-11">Tất cả<span>(15)</span> </label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-21" />
+                            <label for="cat-11">Rau, củ, quả<span>(15)</span> </label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-22" />
+                            <label for="cat-12">Hoa<span>(5)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-23" />
+                            <label for="cat-13">Con giống<span>(10)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-24" />
+                            <label for="cat-13">Cây con<span>(10)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-25" />
+                            <label for="cat-13">Hạt giống<span>(10)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-26" />
+                            <label for="cat-13">Sản phẩm từ sữa<span>(10)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-27" />
+                            <label for="cat-13">Thịt<span>(10)</span></label>
+                        </p>
+                        <p>
+                            <input name="group1" type="checkbox" id="cat-28" />
+                            <label for="cat-13">Loại khác<span>(10)</span></label>
+                        </p>
+
+                    </form>
+
+                </div>
+                <!--Sorting Type: checkbox-->
+
+            </div>
+        <!--Left Side: For Sorting ./-->
+
+
+        <!--Right Side: Main List-->
+        <div class="col-md-10">
+            <div class="btn-convert-view row container-fluid">
+                <form class="navbar-form pull-left" role="search col-md-10" >
+                    <div class="form-group  waves-light">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                    </div>
+                </form>
+                <a class="btn-flat waves-effect waves-teal btn-xlg pull-right col-md-1"><i class="material-icons medium">view_list</i></a>
+                <a class="btn-flat waves-effect waves-teal btn-xlg pull-right col-md-1"><i class="material-icons medium">view_module</i></a>
+            </div>
+            <div class="tab-view-main-list row">
+                <div class="col s12 row">
+
+                    <!--First rowm Item-->
+                    <div class="row">
+                        <!-- 1st column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price">
+                                        <p class="green-text medium-500">50.000 vnđ </p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect btn-small">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- 1st vcolumn -->
+
+                        <!-- 2nd column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>50</span>
+                                    </div>
+                                </div>
+
+
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price center">
+                                        <p class="green-text medium-500">500.000 vnđ <br/><span class="discount light-300 black-text">700.000 vnđ</span></p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Discount label-->
+                                <div class="discount-label">
+                                    <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                </div>
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- 2nd column -->
+
+                        <!-- 3rd column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+                                <!--Discount label-->
+                                <div class="discount-label">
+                                    <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                </div>
+
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price">
+                                        <p class="green-text medium-500">50.000 vnđ <br> <span class="discount light-300 black-text">70.000 vnđ</span></p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- 3rd column -->
+
+                        <!-- 4th column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+                                <!--Discount label-->
+                                <div class="discount-label">
+                                    <h5 class="card-label"> <span class="label danger-color-dark">-50%</span></h5>
+                                </div>
+
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price">
+                                        <p class="green-text medium-500">15.000 vnđ <br><span class="discount light-300 black-text">30.000 vnđ</span></p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- 4th column -->
+                    </div>
+                    <!--First row Item-->
+
+                    <!--Second rowm Item-->
+                    <div class="row">
+                        <!-- Multi-item column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+                                <!--Discount label-->
+                                <div class="discount-label">
+                                    <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                </div>
+
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price" style="margin: 0; padding: 0">
+                                        <p class="green-text medium-500">45.000 vnđ <br> <span class="discount light-300 black-text">90.000 vnd</span></p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- /.Multi-item column -->
+
+                        <!-- Multi-item column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price" style="margin: 0; padding: 0">
+                                        <p class="green-text medium-500">100.000 vnđ</p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- /.Multi-item column -->
+
+                        <!-- Multi-item column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price" style="margin: 0; padding: 0">
+                                        <p class="green-text medium-500">50.000 vnđ</p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- /.Multi-item column -->
+
+                        <!-- Multi-item column -->
+                        <div class="col-sm-3 item-card ">
+                            <!--Card-->
+                            <div class="card card-product hoverable">
+                                <!--Image-->
+                                <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                    <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                    </a>
+                                </div>
+                                <!--/.Image-->
+
+                                <div class="info-product-icon container">
+                                    <div class="row">
+                                        <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                        <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                        <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                    </div>
+                                </div>
+
+                                <!--Card content: Name and price-->
+                                <div class="card-content text-center">
+                                    <div class="row">
+                                        <a href=""><h6 class="product-title h6-responsive">Product name</h6></a>
+                                    </div>
+                                    <div class="price" style="margin: 0; padding: 0">
+                                        <p class="green-text medium-500">27.000 vnđ </p>
+                                    </div>
+                                </div>
+                                <!--/.Card content: Name and price-->
+
+                                <!--Buttons call to actions-->
+                                <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                    <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                </div>
+                                <!--/.Buttons-->
+                            </div>
+                            <!--/.Card-->
+                        </div>
+                        <!-- /.Multi-item column -->
+                    </div>
+                    <!--Second row Item-->
+                </div>
+            </div>
+            <!--Page initor-->
+            <div style="margin: 0 0 5% 30%">
+                <ul class="pagination">
+                    <li class="waves-light"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-light"><a href="#!">1</a></li>
+                    <li class="waves-light"><a href="#!">2</a></li>
+                    <li class="waves-light"><a href="#!">3</a></li>
+                    <li class="waves-light"><a href="#!">4</a></li>
+                    <li class="waves-light"><a href="#!">5</a></li>
+                    <li class="waves-light"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Right Side: Main List-->
+    </div>
+</main>
+<!--Danh mục chính-->
+
+
+<!--Button back to top-->
+<section>
+   <span  id="button-back-to-top"><a href="#header"><i class="fa fa-chevron-up fa-3x smooth-scroll"></i></a></span>
+</section>
+
+
+
+<footer class="page-footer black center-on-small-only">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Here you can use rows and columns here to organize your footer
+                    content.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright text-center rgba-black-strong wow fadeIn">
+        <div class="container-fluid">
+            © 2016 Copyright: <a href="#"> thanglong.edu.vn </a> || with Material design.
+        </div>
+    </div>
+</footer>
+
+<script>
+    $(document).ready(function(){
+        $('ul.tabs').tabs();
+    });
+</script>
+</body>
+</html>

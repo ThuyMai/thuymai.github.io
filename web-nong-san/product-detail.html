@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Detail</title>
+    <link rel="import" href="importLib.html">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="materialize/css/materialize.min.css">
+    <script src="materialize/js/materialize.min.js"></script>
+    <style>
+        /*.container {*/
+        /*margin-left: 40px;*/
+        /*margin-right: -30px;*/
+        /*}*/
+
+        #mo-ta-sp p {
+            font-size: 15px;
+        }
+
+        #danh-gia p {
+            font-size: 15px;
+        }
+
+        .tabs .tab a {
+            color: #0A246A;
+        }
+
+        ul > li > span {
+            font-weight: 600;
+        }
+
+        .card {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="header">
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-2 navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header rga-black-strong" style="font-weight: 300; font-family: Arial">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse " id="my-navbar">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a href="/" class="waves-effect waves-light"
+                           style="font-size: 28px; font-family: Arial"><i class="fa fa-home left fa-lg">Chợ nông sản</i>
+                    </a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="/gio-hang" class="waves-effect waves-light">Giỏ hàng<i
+                            class="fa fa-shopping-cart right"></i></a></li>
+                    <li><a href=""><i class="fa fa-bars right"></i>Menu</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group  waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation ./-->
+</header>
+
+<!-- Section: Intro Image -->
+<section class="full-bg-img2">
+</section>
+<!--Section: Intro Image ./-->
+
+
+<div class="container-fluid">
+    <div class="divider-new">Thông tin chi tiết về sản phẩm</div>
+
+    <!--ảnh-->
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-6 text-center">
+                <img src="img/rau_cai.jpg"
+                     data-caption="Rau cải cúc rất tốt cho sức khỏe."
+                     class=" materialboxed  thumbnail img-thumbnail img-rounded responsive-img img-responsive"
+                     alt="Hình ảnh sản phẩm"
+                     title="Hình ảnh sản phẩm: Rau cài"
+                     width="100%" height="100%"
+                >
+            </div>
+            <div class="col-md-6">
+                <h5 style="padding-top: 0; margin-top: 0">Rau cải cúc</h5>
+                <div class="row">
+                    <img src="img/star.png" alt="Số lượng bình chọn" style="margin-left: 20px;">
+                    <span>15 lượt đánh giá</span>
+                </div>
+                <ul class="list-inline">
+                    <li title="Ngày đăng sản phẩm"><i class="fa fa-clock-o"></i>14/05/2016</li>
+                    <li title="Số lượng người viết đánh giá"><a href="#comment-area"><i
+                            class="fa fa-comments-o"></i>4</a></li>
+                    <li title="Số lượt chia sẻ mạng xã hội"><a href="#"><i class="fa fa-facebook"> </i>21</a></li>
+                    <li title="Số người mua hàng"><a href="#"><i class="fa fa-shopping-cart"> </i>25</a></li>
+                </ul>
+                Tình trạng: <b>Còn hàng</b><br>
+                Mã sản phẩm: <b>A123 </b><br>
+                Loại sản phẩm: <b>Trái cây</b><br>
+                Người bán: <span class="title" style="font-weight: 500"><a href="personal-page.html">Author</a></span>
+                <hr>
+                Giá sản phẩm: <span class="red-text"><b>180.000 vnđ</b></span>
+                <hr>
+                <div class="row">
+                    <table style="margin-top: 0; padding-top: 0">
+                        <tr>
+                            <td>Số lượng</td>
+                            <td><input type="number" value="1"></td>
+                            <td>
+                                <button id="gio-hang">Thêm vào giỏ</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="pull-right" style="margin-right: 30px">
+                    <a class="btn-floating waves-light tooltipped secondary-content"
+                       data-position="top"
+                       data-delay="50"
+                       data-tooltip="Chia sẻ trên Facebook"
+                       style="background-color: #0A246A">
+                        <i class="fa fa-facebook"> </i>
+                    </a>
+                    <a class="btn-floating waves-light tooltipped secondary-content"
+                       data-position="top" data-delay="50"
+                       data-tooltip="Chia sẻ trên Twitter"
+                       style="background-color: #55ACEE">
+                        <i class="fa fa-twitter"> </i>
+                    </a>
+                    <a class="btn-floating waves-light tooltipped secondary-content"
+                       data-position="top" data-delay="50"
+                       data-tooltip="Chia sẻ trên Google+"
+                       style="background-color: #DD4B39">
+                        <i class="fa fa-google-plus"> </i>
+                    </a>
+                    <a class="btn-floating waves-light tooltipped secondary-content"
+                       data-position="top"
+                       data-delay="50"
+                       data-tooltip="Chia sẻ trên Instagram"
+                        style="background-color: #3F729B">
+                        <i
+                        class="fa fa-instagram"> </i>
+                    </a>
+                    <button type="button"  class="btn-floating waves-light tooltipped secondary-content"
+                       data-position="top"
+                       data-delay="50"
+                       data-tooltip="Liên hệ với người bán"
+                            data-toggle="modal" data-target="#modal-contact"
+                    >
+                        <i class="fa fa-envelope-o"> </i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <hr>
+</div>
+
+
+<!--mô tả-->
+<div class="container-fluid">
+
+    <!--Sản phẩm chính-->
+    <div class="col-md-9" style="margin-left: 0px">
+        <!--Tiêu đề các tab-->
+        <div class="col s6">
+            <ul class="tabs">
+                <li class="tab col s6"><a class="active" href="#mo-ta-sp">Mô tả</a></li>
+                <li class="tab col s6"><a href="#danh-gia">Đánh giá</a></li>
+            </ul>
+        </div>
+
+        <!--tab mô tả-->
+        <div id="mo-ta-sp" class="col s12">
+            <p class="flow-text">
+                Rau cải cúc là loại rau dễ mọc và nấu cũng nhanh,thường thì chúng ta dùng để ăn lẩu vì đặc tính của rau
+                cải cúc là nhanh chín và ăn như thế sẽ ngọt và giữ được chất dinh dưỡng nên cũng là một loại rau được ưa
+                chuộng với đa số.
+            </p>
+            <img src="img/rau-cai-cuc.jpg" data-caption="Rau cải cúc rất tốt cho sức khỏe." alt="Rau cải"
+                 class=" materialboxed responsive-img img-responsive text-center" title="Rau cải">
+            <p class="flow-text">
+                Rau cải cúc còn được gọi là cải tần ô, rau cúc, rau tần ô… Là cây thảo sống hằng năm, lá ôm vào thân, xẻ
+                lông chim hai lần. Cụm hoa ở nách lá, các hoa ở mép màu vàng sẫm, thơm. Mùa hoa vào tháng 1 – 3. Rau cải
+                cúc giàu dinh dưỡng như chứa 1,85% protid 2,57% glucid, 0,43% lipid và còn có nhiều vitamin A, B, C…
+            </p>
+            <img src="img/cong-dung-cua-cac-loai-rau-cai-8.jpg" alt="Công dụng của rau cải"
+                 data-caption="Rau cải cúc rất tốt cho sức khỏe."
+                 class=" materialboxed responsive-img img-responsive text-center" title="Công dụng của rau cải">
+            <p class="flow-text">
+                Cải cúc tốt cho các bệnh tăng huyết áp. Trong cải cúc có chứa những chất kiềm mật có tác dụng hạ huyết
+                áp, bổ não, những chất xơ thô tốt cho tiêu hóa, thông tiện và giảm cholesterol.
+            </p>
+            <p class="flow-text">
+                <b>Chú ý:</b> Không dùng cháo rau cải cúc cho người có thể trạng hư hàn, lạnh bụng, tiêu chảy.
+            </p>
+            <p class="flow-text">
+                <b>Các món ngon với rau cải cúc: </b> Cải cúc nấu canh thịt hoặc tôm, cải cúc trộn salad, canh cải cúc
+                rong biển trị ho, dùng làm thực phẩm ăn lẩu.
+            </p>
+            <button class="btn" style="margin-top: 30px">Thêm vào giỏ hàng +</button>
+        </div>
+
+        <!--tab đánh giá-->
+        <div id="danh-gia" class="col s12">
+
+            <!--Xem các comment-->
+            <div class="row" style="margin-top: 20px;">
+                <h5 class="text-center h5-responsive">Số lượng đánh giá: <span class="red"
+                                                                               style="color: white; padding: 5px;">4</span>
+                </h5>
+            </div>
+            <div class="row">
+                <ul class="collection">
+                    <li class=" collection-item avatar hoverable">
+                        <img src="img/user1.png" alt="" class="circle">
+                        <span class="title"><a href="personal-page.html">Username 1</a></span>
+                        <br>
+                        <span title="Ngày đăng bình luận"><i class="fa fa-clock-o"></i>14/05/2016</span>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum impedit dolor
+                            possimus architecto labore.
+                        </p>
+                        <a class="tooltipped secondary-content" data-position="top" data-delay="50"
+                           data-tooltip="Thích bình luận này"><i class="material-icons">thumb_up</i></a>
+
+                    </li>
+                    <li class="collection-item avatar hoverable">
+                        <img src="img/user2.jpg" alt="" class="circle">
+                        <span class="title"><a href="personal-page.html">Tôi là user số 2</a></span>
+                        <br>
+                        <span title="Ngày đăng bình luận"><i class="fa fa-clock-o"></i>14/05/2016</span>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum impedit dolor
+                            possimus architecto labore.
+                        </p>
+                        <a class="tooltipped secondary-content" data-position="top" data-delay="50"
+                           data-tooltip="Thích bình luận này"><i class="material-icons">thumb_up</i></a>
+
+                    </li>
+                    <li class="collection-item avatar hoverable">
+                        <img src="img/user3.jpg" alt="" class="circle">
+                        <span class="title"><a href="personal-page.html">Người dùng số 3</a></span>
+                        <br>
+                        <span title="Ngày đăng bình luận"><i class="fa fa-clock-o"></i>14/05/2016</span>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum impedit dolor
+                            possimus architecto labore.
+                        </p>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum impedit dolor
+                            possimus architecto labore.
+                        </p>
+                        <a class="tooltipped secondary-content" data-position="top" data-delay="50"
+                           data-tooltip="Thích bình luận này"><i class="material-icons">thumb_up</i></a>
+
+                    </li>
+                    <li class="collection-item avatar hoverable">
+                        <img src="img/user4.jpg" alt="" class="circle">
+                        <span class="title"><a href="personal-page.html">User 4</a></span>
+                        <br>
+                        <span title="Ngày đăng bình luận"><i class="fa fa-clock-o"></i>14/05/2016</span>
+                        <p class="flow-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores illum impedit dolor
+                            possimus architecto labore.
+                        </p>
+                        <a class="tooltipped secondary-content" data-position="top" data-delay="50"
+                           data-tooltip="Thích bình luận này"><i class="material-icons">thumb_up</i></a>
+
+                    </li>
+
+                </ul>
+            </div>
+
+
+            <!--Viết bình luận-->
+            <div class="row text-center">
+                <h5>Viết bình luận của bạn</h5>
+            </div>
+            <div class="row card hoverable">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="icon_prefix" type="text" class="validate">
+                            <label for="icon_prefix">Tên bạn <span>*</span></label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="icon_telephone" type="tel" class="validate">
+                            <label for="icon_telephone">Email</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mode_edit</i>
+                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                            <label for="textarea1">Đánh giá của bạn</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Gửi
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--Sản phẩm cùng loại-->
+    <div class="col-md-3 card-panel" style="margin-bottom: 20px">
+        <h6 class="section-title st-blue">Sản phẩm cùng loại</h6>
+        <div class=" horizontal-listing">
+            <!--First row-->
+            <a href="">
+                <div class="row hoverable">
+                    <div class="col-sm-4">
+                        <img src="img/display-product2.jpg" class="img-responsive z-depth-1">
+                    </div>
+                    <div class="col-sm-8">
+                        <h6 class="title">Lorem ipsum</h6>
+                        <ul class="list-inline item-details">
+                            <li><i class="fa fa-usd"> 32.000 vnđ</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <!--Second-->
+            <a href="">
+                <div class="row hoverable">
+                    <div class="col-sm-4">
+                        <img src="img/display-product.jpg" class="img-responsive z-depth-1">
+                    </div>
+                    <div class="col-sm-8">
+                        <h6 class="title">Lorem ipsum</h6>
+                        <ul class="list-inline item-details">
+                            <li><i class="fa fa-usd"> 32.000 vnđ</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!--Sp cùng người bán-->
+    <div class="col-md-3 card-panel" style="margin-top: 20px">
+        <h6 class="section-title st-blue">Sản phẩm cùng người bán</h6>
+        <div class=" horizontal-listing">
+            <!--First row-->
+            <a href="">
+                <div class="row hoverable">
+                    <div class="col-sm-4">
+                        <img src="img/display-product2.jpg" class="img-responsive z-depth-1">
+                    </div>
+                    <div class="col-sm-8">
+                        <h6 class="title">Lorem ipsum</h6>
+                        <ul class="list-inline item-details">
+                            <li><i class="fa fa-usd"> 32.000 vnđ</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+            <!--Second-->
+            <a href="">
+                <div class="row hoverable">
+                    <div class="col-sm-4">
+                        <img src="img/display-product.jpg" class="img-responsive z-depth-1">
+                    </div>
+                    <div class="col-sm-8">
+                        <h6 class="title">Lorem ipsum</h6>
+                        <ul class="list-inline item-details">
+                            <li><i class="fa fa-usd"> 32.000 vnđ</i></li>
+                        </ul>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-md-3 card-panel" style="margin-top: 20px">
+        <h6 class="section-title st-blue">Đánh dấu cho sản phẩm</h6>
+        <div class=" horizontal-listing">
+            <div class="chip">
+                <img src="img/user4.jpg" alt="Thẻ Tag">
+                Author
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!--Liên hệ người bán-->
+<!-- Modal -->
+<!-- Modal: Contact form -->
+<div class="modal fade" id="modal-contact" role="dialog" >
+    <div class="dialog" >
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4><i class="fa fa-user"></i>Người bán</h4>
+            </div>
+            <div class="modal-body" style="height: 100%; width: 100%">
+
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">Đóng</button>
+            </div>
+            <!--/.Footer-->
+        </div>
+        <!-- /.Modal content-->
+    </div>
+</div>
+<!--/.Modal: Contact form-->
+
+
+
+
+
+<!--footer-->
+<footer class="page-footer black center-on-small-only">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Here you can use rows and columns here to organize your footer
+                    content.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright text-center rgba-black-strong wow fadeIn">
+        <div class="container-fluid">
+            © 2016 Copyright: <a href="#"> thanglong.edu.vn </a> || with Material design.
+        </div>
+    </div>
+</footer>
+<!--footer./-->
+<script>
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+        $('.tooltipped').tooltip({delay: 50});
+        $('#textarea1').trigger('autoresize');
+    });
+</script>
+</body>
+</html>

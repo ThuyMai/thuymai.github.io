@@ -1,0 +1,399 @@
+*{
+    max-width: 100%;
+    max-height: 90%;
+    margin: 0 auto;
+}
+body{
+    margin: 0 10px 20px 10px;
+}
+
+
+/* STYLE FOR HEADER*/
+#header, #header_menu_detail{
+    position: relative;
+    z-index: 2;
+}
+#header img{
+    height: 700px;
+    width: 100%;
+}
+.navbar{
+    background-color: rgba(1,1,1,0.2);
+    height:80px;
+}
+.fixed-on-top{
+    position: fixed;
+    top: 0;
+    left: 24px;
+}
+.brand{
+    z-index: 2;
+    font-size: 28px;
+    font-family: 'Gloria Hallelujah', cursive;
+    transition: color 0.2s linear;
+    letter-spacing: 2px;
+}
+.brand a:link{
+    color: white;
+}
+.brand a:hover{
+    color: #C59D5F;
+    border-bottom: 2px solid white;
+    cursor: hand;
+}
+.navbar ul li:hover a{
+    color: #C59D5F;
+}
+.navbar ul li a:link, a:visited{
+    color: white;
+}
+
+
+.navbar ul{
+    list-style: none;
+    font-size: 14px;
+    margin-left: 600px;
+    padding-left: 9px;
+    padding-top: 27px;
+    margin-right: auto;
+}
+.navbar ul li{
+    display: inline-block;
+    letter-spacing: 1px;
+    padding-left: 20px;
+    font-family: 'Poiret One', cursive;
+    text-transform: uppercase;
+}
+.navbar .brand{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.isactive{
+    border-bottom: 1px solid white;
+}
+.article_headline{
+    text-align: center;
+    color: white;
+    letter-spacing: 5px;
+    position: absolute;
+    top: 43%; left: 23%;
+    z-index: 2;
+    padding: 5px;
+}
+.article_headline h2{
+    font-family: 'Dancing Script', cursive;
+    padding-bottom: 5px;
+    font-size: 60px;
+    color: #C59D5F;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+.article_headline h2:first-letter{
+    font-size: 100px;
+}
+.article_headline h3 {
+    padding: 20px 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+.article_headline button{
+    height: 60px;
+    width: 80px;
+    border-radius: 10px;
+    font-family: "Exo", sans-serif;
+    letter-spacing: 3px;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+.article_headline:hover button{
+    background-color: #C59D5F;
+    color: white;
+}
+.article_headline h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+}
+
+/*END STYLE FOR HEADER*/
+
+
+@keyframes fade-in-up {
+    from{ opacity: 0;} to {opacity: 1;}
+}
+
+/*STYLE FOR ABOUT US*/
+#about_us{
+    margin: 30px;
+    padding-top: 60px;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+#about_us .story{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+#about_us .story h1{
+    font-family: 'Dancing Script', cursive;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #C59D5F;
+}
+#about_us .story h1:first-letter{
+    font-size: 80px;
+}
+#about_us .story h2{
+    font-family: 'Indie Flower', cursive;
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#about_us .story p{
+    font-family: 'Shadows Into Light', cursive;
+    padding: 10px;
+}
+#about_us .story h3 a:link{
+    letter-spacing: 3px;
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+}
+#about_us .about_us_image img{
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px 0;
+}
+/*END STYLE FOR ABOUT US*/
+
+/*STYLE FOR RECIPES*/
+#recipe{
+    margin: 60px 10px;
+    position: relative;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+#recipe img{
+    padding-top: 60px;
+    width: 100%;
+    height: 400px;
+}
+#recipe h2{
+    position: absolute;
+    top: 64%;
+    left: 44%;
+    z-index: 2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: white;
+}
+.menu-item >ul >li a:hover{
+    /*letter-spacing: 3px;*/
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+}
+.menu-item>ul>li>ul{
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    top: 44px;
+    width: 171px;
+    left: 210px;
+    padding: 14px 20px 215px 15px;
+    color: white;
+    line-height: 44px;
+}
+.menu-item>ul>li:hover ul{
+    display: block;
+}
+.menu-item>ul>li>ul> li:hover{
+    /*letter-spacing: 3px;*/
+    color: #C59D5F;
+    /*border-bottom: 2px solid #C59D5F;*/
+}
+
+
+.submenu#recipe span{
+    font-family: 'Shadows Into Light', cursive;
+    padding: -1px;
+}
+/*END STYLE FOR RECIPES*/
+
+
+/*STYL? FOR MENU*/
+#menu{
+    position: relative;
+    margin: 30px 20px 0;
+    padding-top: 60px;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+#menu .menu_image{
+     float: left;
+    width: 60%;
+}
+#menu .menustory{
+    padding:0;
+    margin: 0;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#menu .menustory h1{
+    font-family: 'Dancing Script', cursive;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #C59D5F;
+}
+#menu .menustory h1:first-letter{
+    font-size: 80px;
+}
+#menu .menustory h2{
+    font-family: 'Indie Flower', cursive;
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#menu .menustory p{
+    font-family: 'Shadows Into Light', cursive;
+    padding: 10px;
+}
+#menu .menustory h3 a:link{
+    letter-spacing: 3px;
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+}
+
+#menu .menustory h3 a:visited{
+    letter-spacing: 3px;
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+}
+
+
+#menu .menu_image img{
+
+    width: 44%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+    margin:  0;
+}
+
+
+/*STYLE FOR BLEND*/
+#blend{
+    margin: 60px 10px;
+    position: relative;
+    text-align: center;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+#blend img{
+    padding-top: 60px;
+    width: 100%;
+    height: 400px;
+}
+#blend h2{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    z-index: 2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+    color: #C59D5F;
+}
+#blend span{
+    font-family: 'Shadows Into Light', cursive;
+    color: whitesmoke;
+    font-size: 40px;
+}
+/*END STYLE FOR BLEND*/
+
+
+/*STYLE FOR DELIGHT*/
+#delight{
+    margin: 30px;
+    padding-top: 60px;
+    animation: fade-in-up cubic-bezier(0.47, 0, 0.75, 0.72) 4s;
+}
+#delight .delightintroduce{
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 10px;
+    vertical-align: middle;
+    text-align: center;
+}
+#delight .delightintroduce h1{
+    font-family: 'Dancing Script', cursive;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #C59D5F;
+}
+#delight .delightintroduce h1:first-letter{
+    font-size: 80px;
+}
+#delight .delightintroduce h2{
+    font-family: 'Indie Flower', cursive;
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#delight .delightintroduce p{
+    font-family: 'Shadows Into Light', cursive;
+    padding: 10px;
+}
+#delight .delightintroduce h3 a:link{
+    letter-spacing: 3px;
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+    text-transform: uppercase;
+}
+
+#delight .delightintroduce h3 a:visited{
+    letter-spacing: 3px;
+    color: #C59D5F;
+    border-bottom: 2px solid #C59D5F;
+    text-transform: uppercase;
+}
+
+
+#delight .delightimage img{
+    width: 20%;
+    height: auto;
+    padding: 5px;
+    border-radius: 20px;
+    float: left;
+    margin: 10px 0;
+}
+#delight .delightintroduce span{
+    font-family: 'Indie Flower', cursive;
+    font-style: oblique;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+/*END STYLE FOR DELIGHT*/
+#footer{
+    margin-top: 500px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;;
+    font-size: 24px;
+    vertical-align: middle;
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+/*END FOR FOOTER*/
+
+.submenu{
+    display: none;
+}
+
+

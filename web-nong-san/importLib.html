@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+
+    <!-- Material Design Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.css" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- SCRIPTS -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- Material Design Bootstrap -->
+<script type="text/javascript" src="js/mdb.js"></script>
+
+<!--Custom Script-->
+<script>
+    $(document).ready(function() {
+        // Initialize collapse button
+//        $('.button-collapse').sideNav();
+//        $('.button-collapse').sideNav({
+//                    menuWidth: 300, // Default is 240
+//                    edge: 'right', // Choose the horizontal origin
+//                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+//                }
+//        );
+        // Initialize collapsible (uncomment the line below if you use the dropdown variation)
+        $('.collapsible').collapsible();
+        $('.carousel').carousel();
+        $('#carousel-multi-item').carousel();
+        // For tooltip
+        $('[data-toggle="tooltip"]').tooltip({animation: true, delay: {show: 300, hide: 300}});
+    });
+
+</script>
+
+</body>
+
+</html>

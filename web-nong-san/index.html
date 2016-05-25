@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+    <link rel="import" href="importLib.html">
+
+</head>
+
+
+<body data-spy="scroll">
+
+<header>
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-2 " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header rga-black-strong" style="font-weight: 300; font-family: Arial">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse " id="my-navbar">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a data-match-route="/" class="waves-effect waves-light"
+                           style="font-size: 28px; font-family: Arial"><i class="fa fa-home left fa-lg">Chợ nông sản</i>
+                    </a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="shopping-cart.html" target="_blank" class="waves-effect waves-light">Giỏ hàng<i
+                            class="fa fa-shopping-cart right"></i></a></li>
+                    <li><a href=""><i class="fa fa-bars right"></i>Menu</a></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group waves-effect waves-light">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--Navigation ./-->
+</header>
+
+
+<!-- Section: Intro -->
+<section id="intro" class="full-bg-img">
+    <div class="view">
+        <div class="mask rgba-black-light">
+            <div class="container">
+                <div class="verticalcenter text-center white-text">
+                    <h1 class="wow fadeInDown h1-responsive" style="font-weight: 400;letter-spacing: 5px">Chợ nông
+                        sản</h1>
+                    <h2 class="wow fadeInDown h2-responsive">Quảng bá sản phẩm của bạn ở khắp mọi nơi</h2>
+                    <!--Call to action buttons-->
+                    <a href="#buy-products-guide" class="btn btn-primary waves-effect waves-light wow fadeInLeft"
+                       data-wow-delay="0.2s"><i class="fa fa-truck left "></i></i>Hướng dẫn mua hàng</a>
+                    <button class="btn btn-default waves-effect waves-light wow fadeInRight"
+                       data-wow-delay="0.2s" data-toggle="modal" data-target="#modal-login"><i class="fa fa-sign-in right"></i></i>Đăng nhập</button>
+                </div>
+                <!--button - intro-->
+                <button><a href="#list-products"><i id="button-intro"
+                                                    class="fa fa-angle-double-down fa-3x smooth-scroll"></i></a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Intro ./-->
+
+
+<!--Main: products list, features-->
+<main>
+    <!--Main Container-->
+    <div class="container">
+
+        <!--Section:  Product list -->
+        <section id="list-products">
+            <div class="divider-new">Sản phẩm được chọn mua nhiều nhất</div>
+            <!-- Carousel -->
+
+            <!--Button navi slide-->
+            <div id="carousel-multi-item" class="carousel slide multiitem-car"  >
+                <div class="text-center row">
+                        <a href="product-list.html" target="_blank" class="btn-flat btn-large pull-right" style="color: #3F729B; margin-right:15px">
+                           <span> <i class="fa fa-arrow-right pull-right"></i>Xem toàn bộ</span>
+                        </a>
+                </div>
+
+
+                <!-- Wrapper for Main Products slide -->
+                <div class="carousel-inner">
+                    <a id="button-left" class="btn-floating unique-color btn-small waves-effect waves-light" href="#carousel-multi-item" role="button" data-slide="prev"><i class="material-icons">keyboard_arrow_left</i></a>
+
+                    <!-- First slide -->
+                    <div class="item active container-fluid">
+                        <!--This part includes 1 row, that wraps 4 cols-->
+                        <!-- Row -->
+                        <div class="row">
+                            <!-- First column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">50.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Second column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">15.500 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Third column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">30.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Fourth column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Discount label-->
+                                    <div class="discount-label">
+                                        <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">60.000 vnđ <br><span class="discount light-300 black-text">120.000 vnđ</span></p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- First Slide ./ -->
+
+                    <!-- Second slide -->
+                    <div class="item container-fluid">
+                        <!--This part includes 1 row, that wraps 4 cols-->
+                        <!-- Row -->
+                        <div class="row">
+                            <!-- First column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">50.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Second column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">15.500 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Third column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">30.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Fourth column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Discount label-->
+                                    <div class="discount-label">
+                                        <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">60.000 vnđ <br><span class="discount light-300 black-text">120.000 vnđ</span></p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- Second Slide -->
+
+                    <!-- Third slide -->
+                    <div class="item  container-fluid">
+                        <!--This part includes 1 row, that wraps 4 cols-->
+                        <!-- Row -->
+                        <div class="row">
+                            <!-- First column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">50.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Second column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">15.500 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Third column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">30.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Fourth column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Discount label-->
+                                    <div class="discount-label">
+                                        <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">60.000 vnđ <br><span class="discount light-300 black-text">120.000 vnđ</span></p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- Third Slide .//-->
+
+                    <!-- Fourth slide -->
+                    <div class="item  container-fluid">
+                        <!--This part includes 1 row, that wraps 4 cols-->
+                        <!-- Row -->
+                        <div class="row">
+                            <!-- First column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">50.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Second column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">15.500 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Third column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">30.000 vnđ</p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!-- /.Multi-item column -->
+
+                            <!-- Fourth column -->
+                            <div class="col-md-3 item-card ">
+                                <!--Card-->
+                                <div class="card card-product hoverable">
+                                    <!--Image-->
+                                    <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                        <a href="product-detail.html"><img src="img/display-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                    <!--/.Image-->
+
+                                    <div class="info-product-icon container">
+                                        <div class="row">
+                                            <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                            <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                            <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                        </div>
+                                    </div>
+
+                                    <!--Discount label-->
+                                    <div class="discount-label">
+                                        <h5 class="card-label"> <span class="label danger-color-dark">-20%</span></h5>
+                                    </div>
+
+
+                                    <!--Card content: Name and price-->
+                                    <div class="card-content text-center">
+                                        <div class="row">
+                                            <a href=""><h5 class="product-title h5-responsive">Product name</h5></a>
+                                        </div>
+                                        <div class="price">
+                                            <p class="green-text medium-500">60.000 vnđ <br><span class="discount light-300 black-text">120.000 vnđ</span></p>
+                                        </div>
+                                    </div>
+                                    <!--/.Card content: Name and price-->
+
+                                    <!--Buttons call to actions-->
+                                    <div class="card-btn text-center" style="margin: 0; padding: 0">
+                                        <a href="#" class="btn btn-border-primary btn-rounded waves-effect">Thêm vào giỏ</a>
+                                    </div>
+                                    <!--/.Buttons-->
+                                </div>
+                                <!--/.Card-->
+                            </div>
+                            <!--  column -->
+                        </div>
+                        <!-- /.row -->
+                    </div>
+                    <!-- Fourth Slide ./-->
+                    <a id="button-right" class="btn-floating unique-color btn-small waves-effect waves-light" href="#carousel-multi-item" role="button" data-slide="next"><i class="material-icons">keyboard_arrow_right</i></a>
+
+                </div>
+                <!-- Main Products slide-->
+
+            </div>
+
+            <!-- /.carousel -->
+        </section>
+        <!--Section: Products list ./-->
+
+
+
+
+        <!--Section: Contact-->
+        <section id="contact">
+            <div class="divider-new">Liên hệ với chúng tôi</div>
+            <div class="row">
+                <!-- Contact details -->
+                <div class="row">
+                    <form class="col-md-7 hidden-xs">
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <input id="your-name" type="text" class="validate">
+                                <label for="your-name">Tên của bạn</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <input placeholder="Để chúng tôi có thể liên lạc với bạn!" id="your_email" type="email" class="validate">
+                                <label for="your_email">Email của bạn</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <textarea id="your_message" class="validate materialize-textarea" length="120"></textarea>
+                                <label for="your_message">Nội dung của bạn</label>
+                            </div>
+                        </div>
+                        <a class="btn unique-color">Gửi</a>
+                    </form>
+
+                <div class="col-md-5 text-center">
+                    <ul>
+                        <li><a class="btn-floating btn-small waves-effect waves-light blue-grey wow fadeInRight"
+                               data-wow-delay="0.2s"><i class="material-icons">pin_drop</i></a>
+                            <p>Hà Nội, Việt Nam</p>
+                        </li>
+
+                        <li><a class="btn-floating btn-small waves-effect waves-light blue-grey wow fadeInRight"
+                               data-wow-delay="0.4s"><i class="material-icons">phone</i></a>
+                            <p>+ 012 345 6789</p>
+                        </li>
+
+                        <li><a class="btn-floating btn-small waves-effect waves-light blue-grey wow fadeInRight"
+                               data-wow-delay="0.6s"><i class="material-icons">email</i></a>
+                            <p>doanthuymai166@gmail.com</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--Section: Contact ./-->
+    </div>
+</main>
+<!--Main Container ././-->
+
+
+<!--Quick Look-->
+<div class="modal fade" id="quick-look" role="dialog">
+    <div class="modal-dialog modal-qlook"  style="height: auto; width: auto">
+
+        <!--Modal content-->
+        <div class="modal-content">
+            <!-- Modal header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Xem nhanh</h4>
+            </div>
+            <!-- /.Modal conheaderent-->
+
+            <!-- Modal body-->
+            <div class="modal-body">
+                <!--Product Panel-->
+                <div class="container">
+                    <div class="product-panel">
+                        <div class="row">
+                            <!--First column: carousel gallery-->
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <!-- Carousel -->
+                                <div id="car-gall" class="carousel slide carousel-fade carousel-thumbnails carousel-gallery">
+                                    <!--Main image-->
+                                    <div class="col-xs-8">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner z-depth-1 hoverable" role="listbox">
+                                            <!-- First slide -->
+                                            <div class="item active">
+                                                <img src="img/display-product.jpg" alt="slide1">
+                                            </div>
+                                            <!-- /.item -->
+
+                                            <!-- Second slide -->
+                                            <div class="item">
+                                                <img src="img/slide1-min.jpg" alt="slide2">
+                                            </div>
+                                            <!-- /.item -->
+
+                                            <!-- Third slide -->
+                                            <div class="item">
+                                                <img src="img/slide-min.jpg" alt="slide3">
+                                            </div>
+                                            <!-- /.item -->
+                                        </div>
+                                        <!-- /.carousel-inner -->
+                                    </div>
+                                    <!--/.Main image-->
+                                </div>
+                                <!-- /.carousel -->
+                            </div>
+                            <!--/.First column: carousel gallery-->
+
+                            <!--Second column: product details-->
+                            <div class="col-xs-12 col-sm-6 col-lg-5 text-center">
+                                <!--Title-->
+                                <h4>Dâu tây<span class="label deep-purple darken-2" style="margin-left: 2em ">-20%</span></h4>
+                                <!--Price-->
+                                <div class="price">
+                                    <p class="green-text medium-500">50.000 vnđ<br><span class="discount light-300 black-text">70.000 vnđ</span></p>
+                                </div>
+
+                                <!--Quantity-->
+                                <div class="row">
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" >Số lượng (kg):</h6></div>
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><input id="number" class="col col-md-6 col-xs-6 col-lg-6" type="number" value="1" class="quantity"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" >Thành tiền: </h6></div>
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" > $500 </h6></div>
+                                </div>
+                                <a class="btn btn-default waves-effect waves-light">Cho vào giỏ hàng</a>
+                                <!--Wish list button-->
+                                <a class="btn-floating btn-small waves-effect waves-light red top-btn" data-toggle="tooltip" data-placement="top" data-original-title="Yêu thích sản phẩm này"><i class="material-icons">favorite</i></a>
+                                <br>
+                                <hr>
+                                <!--Social media-->
+                                <a data-toggle="tooltip" data-original-title="Chia sẻ trên Facebook" class="btn-floating btn-small fb-bg waves-effect waves-light" style="background-color: #3B5998"><i class="fa fa-facebook"> </i></a>
+                                <a data-toggle="tooltip" data-original-title="Gửi tin nhắn cho người bán" class="btn-floating btn-small email-bg waves-effect waves-light" style="background-color: #6A1B9A"><i class="fa fa-envelope-o"> Gửi tin cho người bán </i></a>
+                                <hr>
+                            </div>
+                            <!--Second column: product details-->
+
+                            <!--Third column: product description-->
+                            <div class="col-xs-12 col-sm-12 col-lg-4">
+                                <h5 class="h5-responsive text-center">Mô tả ngắn</h5>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro dolore est beatae iste deleniti eveniet numquam recusandae, deserunt temporibus enim libero magni reiciendis veniam corporis ut atque aperiam rem?</p><br>
+                                <div class="text-center">
+                                    <a class="btn btn-default btn-lg waves-effect waves-light" data-toggle="modal" data-target="#product-details">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <!--/.Third column: product description-->
+                        </div>
+                    </div>
+                </div>
+                <!--/.Product Panel-->
+            </div>
+            <!-- /.Modal body-->
+            <!--Modal footer: close button-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <!--/.Modal footer: close button-->
+        </div>
+        <!-- Modal content-->
+    </div>
+</div>
+<!--/.Modal: QUick look -->
+
+
+<!--Modal Login-->
+<div class="modal fade" id="modal-login" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4><i class="fa fa-user"></i>Đăng nhập</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+                <div class="row">
+                    <form class="col-md-12">
+                        <div class="row">
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="tel" class="validate">
+                                <label for="icon_email">Email</label>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary waves-effect waves-light">Đăng nhập</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">X</button>
+                <div class="options">
+                    <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                    <p>Quên <a href="#">mật khẩu?</a></p>
+                </div>
+            </div>
+            <!--/.Footer-->
+        </div>
+        <!-- /.Modal content-->
+    </div>
+</div>
+<!-- Modal Login ./-->
+
+
+<!--Search box-->
+
+
+<!--Điều hướng bên phải-->
+<div id="fixed-sidebar" data-spy="affix" data-offset-top="1280" style="right: -230px">
+    <nav class="scrollspy hidden-xs hidden-sm" data-offset-top="1280" data-offset-bottom="1280" id="scrollspy">
+        <ul class="nav nav-pills nav-stacked scrollspy">
+            <li class="active "><a href="#list-products" class="active"><i class="fa fa-circle"></i></a></li>
+            <li class=""><a href="#best-features"><i class="fa fa-circle"></i></a></li>
+            <li class=""><a href="#buy-products-guide"><i class="fa fa-circle"></i></a></li>
+            <li class=""><a href="#contact"><i class="fa fa-circle"></i></a></li>
+        </ul>
+    </nav>
+</div>
+
+
+
+<!--footer-->
+<footer class="page-footer  center-on-small-only" style="color: white; background-color: black">
+    <div class="container wow fadeIn">
+        <div class="row col-md-12">
+            <div class="col-md-3">
+                <h3>Chợ nông sản</h3>
+            </div>
+            <div class="col-md-3">
+                <h6>Thông tin liên lạc</h6>
+                Nghiêm Xuân Yêm, phường Đại Kim, Quận Hoàng Mai, Hà Nội<br>
+                SĐT: 0165 327 2738 <br>
+                Email : thuymaitlu@gmail.com
+            </div>
+        <div class="col-md-3">
+            <h6>Hỗ trợ khách hàng</h6>
+            <ul>
+                <li>FAQ</li>
+                <li>Phương thức thanh toán</li>
+                <li>Đặt hàng online</li>
+                <li>Thông tin khác</li>
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h6>Nhận bản tin từ Chợ nông sản</h6>
+            <input type="email" >
+            <button class="btn btn-default">Đăng ký</button>
+        </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="footer-copyright text-center rgba-black-strong wow fadeIn">
+        <div class="container-fluid">
+            © 2016 Copyright: <a href="#"> thanglong.edu.vn </a> || with Material design.
+        </div>
+    </div>
+</footer>
+<!--footer./-->
+
+<div class="affix-end"></div>
+
+
+<!--Animations-->
+<script>
+    new WOW().init();
+</script>
+<script>
+    $(document).ready(function() {
+        $('#fixed-sidebar').affix({
+            offset: {
+                top: 0,
+                bottom: ($('footer').outerHeight(true) + $('.affix-end').outerHeight(true)) + 30
+            }
+        });
+        $('.scrollspy').scrollSpy();
+    });
+</script>
+
+</body>
+
+</html>

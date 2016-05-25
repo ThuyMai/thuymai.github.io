@@ -1,0 +1,108 @@
+.img_header_manu_detail{
+    height: 400px;
+    width: 100%;
+}
+
+a:link, a:visited{
+    color: white;
+}
+
+a:hover{
+    color: #C59D5F;
+}
+
+
+a:hover img{
+    overflow: hidden;
+    transform: scale(1.1,1.1);
+    transition: 5s linear;
+
+}
+
+.menusidebar{
+    height: 100%;
+    width: 253px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(2,6,12,0.8);
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+.image{
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    float: right;
+}
+
+.content{
+    margin-left: 273px;
+    max-width: 800px;
+    max-height: 800px;
+}
+
+.menu_item{
+    list-style-type: none;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 2px solid white;
+    line-height: 60px;
+    border-radius: 20px;
+    text-indent: 20px;
+    padding-top: 20px;
+}
+
+.col{
+    float: right;
+    margin: 5px;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+
+.isactive{
+    font-size: 24px;
+    text-decoration: underline;
+    color: white;
+}
+
+
+.submenu{
+    display: none;
+}
+
+
+.row{
+    height: 400px;
+    margin: 0;
+    display: block;
+    padding: 5px;
+}
+
+.description{
+    margin: 0;
+    vertical-align: middle;
+    text-align: justify;
+    font-family: 'Shadows Into Light', cursive;
+    padding: 10px;
+    width: 60%;
+
+}
+
+
+
+/*END STYLE FOR DELIGHT*/
+.footer{
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;;
+    font-size: 24px;
+   display: inline-block;
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    color: white;
+}
+/*END FOR FOOTER*/
