@@ -9,10 +9,10 @@ systems.
 Result
 ------------
 ###Circuit
-![](./images/final.jpg?raw=true "Optional Title")
+![Circuit](./images/final.jpg?raw=true "Optional Title")
 ###Map Info
-![](./images/info-and-map.jpg?raw=true "Optional Title")
+![Map Info when add places](./images/info-and-map.jpg?raw=true "Optional Title")
 ###Device Update
-![](./images/device-update.png?raw=true "Optional Title")
+![Updating device](./images/device-update.png?raw=true "Optional Title")
 ###Chart
-![](./images/chart.png?raw=true "Optional Title")
+![Chart of place](./images/chart.png?raw=true "Optional Title")
