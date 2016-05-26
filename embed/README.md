@@ -8,11 +8,11 @@ systems.
 
 Result
 ------------
-***Circuit
-![Alt text](/images/final.jpg?raw=true "Optional Title")
-***Map Info
-![Alt text](/images/info-and-map.jpg?raw=true "Optional Title")
-***Device Update
-![Alt text](/images/device-update.png?raw=true "Optional Title")
-***Chart
-![Alt text](/images/chart.png?raw=true "Optional Title")
+###Circuit
+![](./images/final.jpg?raw=true "Optional Title")
+###Map Info
+![](./images/info-and-map.jpg?raw=true "Optional Title")
+###Device Update
+![](./images/device-update.png?raw=true "Optional Title")
+###Chart
+![](./images/chart.png?raw=true "Optional Title")
