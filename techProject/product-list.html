@@ -1,0 +1,207 @@
+<!--Danh mục chính-->
+<div class="container-fluid" data-ng-controller="productsListController">
+    <div class="divider-new">Danh sách sản phẩm</div>
+    <div class="list">
+        <!-- Left Side: For Sorting-->
+        <div class="col-md-2">
+
+            <!--Sort Date: radio-->
+            <div class="sort container-fluid">
+                <div class="divider-new sort-content">
+                    <h6 class="h6-responsive">Sắp xếp</h6>
+                </div>
+                <form class="categories ">
+                    <p>
+                        <input name="group1" type="radio" id="cat-0" checked/>
+                        <label for="cat-2">Nhiều người mua</label>
+                    </p>
+                    <p>
+                        <input name="group1" type="radio" id="cat-1"/>
+                        <label for="cat-1">Ngày mới nhất</label>
+                    </p>
+                    <p>
+                        <input name="group1" type="radio" id="cat-2"/>
+                        <label for="cat-2">Giá tăng dần</label>
+                    </p>
+                    <p>
+                        <input name="group1" type="radio" id="cat-3"/>
+                        <label for="cat-2">Theo tên A-Z</label>
+                    </p>
+
+                </form>
+
+            </div>
+            <!--Sort Date: radio ./-->
+
+            <!--Sorting Area: checkbox-->
+            <div class="sort container-fluid">
+                <div class="divider-new sort-content">
+                    <h6 class="h6-responsive">Địa điểm</h6>
+                </div>
+
+                <form class="categories ">
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-11" checked/>
+                        <label for="cat-11">Miền Bắc<span>(15)</span> </label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-12" checked/>
+                        <label for="cat-12">Miền Trung<span>(5)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-13" checked/>
+                        <label for="cat-13">Miền Nam<span>(10)</span></label>
+                    </p>
+
+                </form>
+
+            </div>
+            <!--Sorting Area: checkbox ./-->
+
+            <!--Sorting Type: checkbox-->
+            <div class="sort container-fluid">
+                <div class="divider-new sort-content">
+                    <h6 class="h6-responsive">Loại hàng</h6>
+                </div>
+
+                <form class="categories ">
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-20" checked/>
+                        <label for="cat-11">Tất cả<span>(15)</span> </label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-21"/>
+                        <label for="cat-11">Rau, củ, quả<span>(15)</span> </label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-22"/>
+                        <label for="cat-12">Hoa<span>(5)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-23"/>
+                        <label for="cat-13">Con giống<span>(10)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-24"/>
+                        <label for="cat-13">Cây con<span>(10)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-25"/>
+                        <label for="cat-13">Hạt giống<span>(10)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-26"/>
+                        <label for="cat-13">Sản phẩm từ sữa<span>(10)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-27"/>
+                        <label for="cat-13">Thịt<span>(10)</span></label>
+                    </p>
+                    <p>
+                        <input name="group1" type="checkbox" id="cat-28"/>
+                        <label for="cat-13">Loại khác<span>(10)</span></label>
+                    </p>
+
+                </form>
+
+            </div>
+            <!--Sorting Type: checkbox-->
+
+        </div>
+        <!--Left Side: For Sorting ./-->
+
+
+        <!--Right Side: Main List-->
+        <div class="col-md-10">
+            <div class="btn-convert-view row container-fluid">
+                <form class="navbar-form pull-left" role="search col-md-10">
+                    <div class="form-group  waves-light">
+                        <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                    </div>
+                </form>
+                <a class="btn-flat waves-effect waves-teal btn-xlg pull-right col-md-1"><i
+                        class="material-icons medium">view_list</i></a>
+                <a class="btn-flat waves-effect waves-teal btn-xlg pull-right col-md-1"><i
+                        class="material-icons medium">view_module</i></a>
+            </div>
+            <div class="tab-view-main-list row">
+                <div class="col s12 row">
+
+                    <!--First rowm Item-->
+                    <div class="row">
+                                <!-- 1st column -->
+                                <div class="col-sm-3 item-card " data-ng-repeat="vege in vegeProducts">
+                                    <!--Card-->
+                                    <div class="card card-product hoverable">
+                                        <!--Image-->
+                                        <div class="card-image waves-effect waves-block waves-light view overlay hm-white-slight">
+                                            <a data-ng-href="#/products/{{vege.id}}">
+                                                <img src="{{vege.thumb}}"
+                                                     class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <!--/.Image-->
+
+                                        <div class="info-product-icon container">
+                                            <div class="row">
+                                                <span class="col s4"><i class="material-icons">grade</i>15</span>
+                                                <span class="col s4"><i class="material-icons">forum</i>20</span>
+                                                <span class="col s4"><i class="material-icons">favorite</i>15</span>
+                                            </div>
+                                        </div>
+
+                                        <!--Card content: Name and price-->
+                                        <div class="card-content text-center">
+                                            <div class="row">
+                                                <a href=""><h6 class="product-title h6-responsive">{{vege.name}}</h6>
+                                                </a>
+                                            </div>
+                                            <div class="price">
+                                                <p class="green-text medium-500">{{vege.price}}</p>
+                                            </div>
+                                        </div>
+                                        <!--/.Card content: Name and price-->
+
+                                        <!--Buttons call to actions-->
+                                        <div class="card-btn text-center">
+                                            <a href="#"
+                                               class="btn btn-border-primary btn-rounded waves-effect btn-small">Thêm
+                                                vào giỏ</a>
+                                        </div>
+                                        <!--/.Buttons-->
+                                    </div>
+                                    <!--/.Card-->
+                                </div>
+                                <!-- 1st vcolumn -->
+
+
+                    </div>
+                    <!--First row Item-->
+
+
+                </div>
+            </div>
+            <!--Page initor-->
+            <div style="margin: 0 0 5% 30%">
+                <ul class="pagination">
+                    <li class="waves-light"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="waves-light"><a href="#!">1</a></li>
+                    <li class="waves-light"><a href="#!">2</a></li>
+                    <li class="waves-light"><a href="#!">3</a></li>
+                    <li class="waves-light"><a href="#!">4</a></li>
+                    <li class="waves-light"><a href="#!">5</a></li>
+                    <li class="waves-light"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Right Side: Main List-->
+    </div>
+</div>
+<!--Danh mục chính-->
+
+
+<script>
+    $(document).ready(function () {
+        $('ul.tabs').tabs();
+    });
+</script>

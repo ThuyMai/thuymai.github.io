@@ -1,0 +1,802 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-ng-app="vegeApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Material Design for Bootstrap</title>
+    <link rel="import" href="importLib.html">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="js/lib/materialize/css/materialize.css">
+
+    <!-- Compiled and minified JavaScript -->
+
+
+    <script type="text/javascript" src="js/controller/app.js"></script>
+    
+
+    <style>
+        .card-product img {
+            height: 200px;
+            width: 200px;
+        }
+        #list-products{
+            height: auto;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .divider-new{
+            margin-bottom: 20px;
+            padding-top: 60px;
+        }
+        .carousel-control i{
+            margin-top: 50%;
+            font-size: 100px;
+            font-weight: 600;
+            color: white;
+        }
+        .carousel-caption{
+            color: black;
+            font-weight: 500;
+            top: 30px;
+        }
+        .carousel-caption a{
+            text-decoration: underline;
+            color: black;
+        }
+        #carousel-example-generic{
+            height: 400px;
+        }
+        #san-pham-theo-mua img{
+            height: 190px;
+            width: 290px;
+        }
+       b{
+           color: red;
+       }
+        #list-products img{
+            height: 200px;
+            width: 200px;
+        }
+
+        #gallery img{
+           padding: 10px;
+            height: 300px;
+            width: 300px;
+            float: left;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<!--Navigation-->
+<header>
+    <!--Navigation-->
+    <nav class="navbar navbar-fixed-top z-depth-2 " role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header" style="font-weight: 300; font-family: Arial">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="collapse navbar-collapse " id="my-navbar">
+                <ul class="nav navbar-nav pull-left">
+                    <li><a data-match-route="/"
+                           style="font-size: 28px; font-family: Arial"><i class="fa fa-home left fa-lg">Chợ nông sản</i>
+                    </a></li>
+                </ul>
+                <ul class="nav navbar-nav pull-right">
+                    <li>
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm">
+                            </div>
+                        </form>
+                    </li>
+                    <li>
+                        <form class="navbar-form" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Tìm kiếm khu vực">
+                            </div>
+                        </form>
+                    </li>
+                    <li><a href="#muahang">Cửa hàng</a></li>
+                    <li><a href="" target="_blank">Giỏ hàng<i
+                            class="fa fa-shopping-cart right"></i></a></li>
+                    <li><a href="#thucdon">Sống khỏe</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!--Navigation ./-->
+</header>
+<!--Navigation ./-->
+
+
+<!-- Section: Intro -->
+<section id="intro" class="full-bg-img">
+    <div class="view">
+        <div class="mask rgba-black-light">
+            <div class="container">
+                <div class="verticalcenter text-center white-text">
+                    <h1 class="wow fadeInDown h1-responsive" style="font-weight: 400;letter-spacing: 5px">Chợ nông
+                        sản</h1>
+                    <h2 class="wow fadeInDown h2-responsive">Quảng bá sản phẩm của bạn ở khắp mọi nơi</h2>
+                    <!--Call to action buttons-->
+                    <a href="#buy-products-guide" class="btn btn-primary wow fadeInLeft"
+                       data-wow-delay="0.2s"><i class="fa fa-truck left "></i></i>Hướng dẫn mua hàng</a>
+                    <button class="btn btn-default wow fadeInRight"
+                            data-wow-delay="0.2s" data-toggle="modal" data-target="#modal-login"><i class="fa fa-sign-in right"></i></i>Đăng nhập</button>
+                </div>
+                <!--button - intro-->
+                <button><a href="#san-pham-theo-mua"><i id="button-intro"
+                                                    class="fa fa-chevron-down fa-3x smooth-scroll"></i></a></button>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section: Intro ./-->
+
+
+<!--Main: products list, features-->
+<main>
+    <!--Main Container-->
+    <div class="container-fluid">
+
+        <!--Sản phẩm theo mùa-->
+        <section id="san-pham-theo-mua">
+            <div class="divider-new">Sản phẩm theo mùa mới nhất</div>
+            <div class="row">
+                <a href="product-list.html" target="_blank" class="btn-flat btn-large pull-right" style="color: #3F729B; margin-right:15px">
+                           <span> <i class="fa fa-arrow-right pull-right"></i>
+                               Xem toàn bộ
+                           </span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                    <form action="#">
+                        <p>
+                            <input type="checkbox" id="muaXuan" checked/>
+                            <label for="muaXuan">Mùa xuân</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="muaHa" />
+                            <label for="muaHa">Mùa hè</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="muaThu" />
+                            <label for="muaThu">Mùa thu</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="muaDong"/>
+                            <label for="muaDong">Mùa đông</label>
+                        </p>
+                    </form>
+                </div>
+                <div class="col-md-10">
+                    <div class="col m3">
+                        <div class="card hoverable">
+                            <div class="card-image hoverable">
+                                <a href="product-detail.html"><img class="activator" src="img/img/ca-rot.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4"> Cà rốt <i class="material-icons right">more_vert</i></span>
+                               <br><b>40.000 vnđ/kg</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col m3">
+                        <div class="card hoverable">
+                            <div class="card-image hoverable">
+                                <a href="product-detail.html"><img class="activator" src="img/img/cam-sanh.jpg"></a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cam sành<i class="material-icons right">more_vert</i></span>
+                                <br><b>50.000 vnđ/kg</b>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col m3">
+                        <div class="card hoverable">
+                            <div class="card-image hoverable">
+                                <a href="product-detail.html"><img class="activator" src="img/img/cu-cai.JPG"></a>
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Củ cải đỏ<i class="material-icons right">more_vert</i></span>
+                                <br><b>40.000 vnđ/kg</b>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col m3">
+                        <div class="card hoverable">
+                            <a href="product-detail.html"><div class="card-image "></a>
+                                <img class="activator" src="img/img/dau-tay.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Dâu tây<i class="material-icons right">more_vert</i></span>
+                                <br><b>40.000 vnđ/kg</b>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+
+        <!--Section:  Sản phẩm được ưa chuộng-->
+        <section id="list-products">
+            <div class="divider-new">Sản phẩm được ưa chuộng</div>
+            <div class="row">
+                <a href="product-list.html" target="_blank" class="btn-flat btn-large pull-right" style="color: #3F729B; margin-right:15px">
+                           <span> <i class="fa fa-arrow-right pull-right"></i>
+                               Xem toàn bộ
+                           </span>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col m2">
+                        <form action="#">
+                            <p>
+                                <input type="checkbox" id="giamGia" checked/>
+                                <label for="giamGia">Đang giảm giá</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="diemDanhGia" />
+                                <label for="diemDanhGia">Điểm đánh giá</label>
+                            </p>
+                            <p>
+                                <input type="checkbox" id="muaNhieu" />
+                                <label for="muaNhieu">Nhiều người mua</label>
+                            </p>
+                        </form>
+                </div>
+                <!-- Carousel -->
+                <div class="col m10">
+                    <div id="carousel-multi-item" class="carousel slide multiitem-car" >
+                    <div class="text-center row">
+                        <a class="btn-floating unique-color btn-small " href="#carousel-multi-item" role="button" data-slide="prev"><i class="material-icons">keyboard_arrow_left</i></a>
+                        <a class="btn-floating unique-color btn-small " href="#carousel-multi-item" role="button" data-slide="next"><i class="material-icons">keyboard_arrow_right</i></a>
+                    </div>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+
+                        <!-- First slide -->
+                        <div class="item active container-fluid">
+
+                            <!-- Row -->
+                            <div class="row">
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/nam-rom.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Nấm rơm<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/buoi-da-xanh.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Bưởi da xanh<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/thit-bo.JPG"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Thịt bắp bò<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/cha-que-uoc-le.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Chả Ước Lễ<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.item -->
+
+                        <!-- Second slide -->
+                        <div class="item container-fluid">
+
+                            <!-- Row -->
+                            <div class="row">
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="http://dep.com.vn/Uploaded/giangnh/2013_01_29/watermelon.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Dưa hấu<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/ga-doi.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Gà Ri<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/buoi-da-xanh.jpg"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Bưởi da xanh<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+
+                                <!-- Multi-item column -->
+                                <div class="col m3">
+                                    <div class="card hoverable">
+                                        <div class="card-image ">
+                                            <a href="product-detail.html"><img class="activator" src="img/img/kim-chi.JPG"></a>
+                                        </div>
+                                        <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Kim Chi<i class="material-icons right">more_vert</i></span>
+                                            <br><b>40.000 vnđ/kg</b>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- /.Multi-item column -->
+                            </div>
+                            <!-- /.row -->
+                        </div>
+                        <!-- /.item -->
+
+
+                    </div>
+                    <!-- /.carousel-inner -->
+
+                </div>
+                </div>
+            </div>
+            <!-- /.carousel -->
+        </section>
+        <!--Section: Features ./-->
+
+
+        <!--Section: About my Features-->
+        <section id="best-features" class="wow fadeInRight" data-wow-delay="0.1s">
+            <div class="divider-new wow bounceIn" >Chúng tôi có gì cho bạn?</div>
+            <div class="row">
+                <div class="container">
+                <div class="col m5">
+                    <img src="img/img/bg-product.png" style="height: 400px; width: 400px">
+                </div>
+                <div class="col m7 text-center">
+                    <br>
+                    <h5>Chợ nông sản là nơi:</h5>
+                    <p>
+                    - Nơi uy tín để mua bán các lương thực, thực phẩm sạch.</p>
+                    <p> - Nơi chia sẻ các món ăn ngon - bổ - rẻ cho các bà nội trợ.</p>
+                    <p>- Miễn phí giao hàng trong vòng 2km.</p>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!--Section: About my Features ./-->
+
+        <!--Section: Thực đơn sống khỏe-->
+        <section id="healthy-life-menu" >
+            <div class="divider-new">Thực đơn hôm nay</div>
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="img/img/muc-xin.jpg" alt="Mực xiên rau củ">
+                        <div class="carousel-caption">
+                            <h5><a href="">Mực xiên rau củ</a></h5>
+                            <p>Mực xiên rau củ quả hấp hoặc nướng đều tạo sự mới lạ trong các bữa ăn gia đình. Màu sắc kết hợp sẽ làm món ăn thêm hấp dẫn các bạn ...</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img/thang-cuon-tom-thit.JPG" alt="..." width="100%">
+                        <div class="carousel-caption">
+                            <h5><a href="">Thang cuốn tôm thịt</a></h5>
+                            <p>Thưởng thức món mới - Thang cuốn tôm thịt món ngon mới lạ, hấp dẫn</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/img/canh-ga.jpg" alt="...">
+                        <div class="carousel-caption ">
+                            <h5><a href="">Cánh gà nướng giòn</a></h5>
+                            <p>Cánh gà sẽ rất ngon nếu bạn nướng với nước sốt thịt nướng. Loại nước sốt này có bán phổ biến trên thị trường.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span><i class="material-icons">chevron_left</i></span>
+                    <span class="sr-only">Previous</span>
+
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span><i class="material-icons">chevron_right</i></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+        </section>
+
+        <!--Album ảnh của những người nông dân-->
+        <section id="gallery" >
+            <div class="divider-new">Chia sẻ album sản phẩm nổi bật</div>
+            <div class="row container">
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/1.jpg"></a>
+                </div>
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/4.jpg"></a>
+                </div>
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/6.jpg"></a>
+                </div>
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/2.jpg"></a>
+                </div>
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/5.jpg"></a>
+                </div>
+                <div class="col m4">
+                    <a href="product-detail.html"><img src="img/img/3.jpg"></a>
+                </div>
+            </div>
+        </section>
+
+        <!--Section: Buy products-->
+        <section id="buy-products-guide">
+            <div class="divider-new wow bounceIn flow-text" >Hướng dẫn mua hàng</div>
+            <div id="buy-product">
+                <img class="img-responsive" src="img/Giao-hang.png" alt="Quy trình khi mua hàng của quý khách">
+                <div class="container flow-text" style="line-height: normal">
+                    <h5 class="h5-responsive" style="font-weight: 600"> Đối với thành viên của website: </h5>
+                    <p>     » Bước 1: Đăng nhập vào website.</p>
+                    <p>     » Bước 2: Lựa chọn sản phẩm trên web và cho vào giỏ hàng. </p>
+                    <p>     » Bước 3: Nhấn vào nút "Đặt hàng" để gửi đơn đặt hàng cho công ty.</p>
+                    <h5  class="h5-responsive" style="font-weight: 600"> Đối với khách (chưa đăng ký thành viên) của website:</h5>
+                    <p>     » Bước 1: Lựa chọn sản phẩm trên web và cho vào giỏ hàng. </p>
+                    <p>     » Bước 2: Nhấn vào nút "Đặt hàng". </p>
+                    <p>     » Bước 3: Quý khách nhập những thông tin cần thiết để chúng tôi có thể liên hệ.</p>
+                    <h6  class="h6-responsive">Nhân viên tổng đài sẽ liên lạc với bạn trong vòng 24h để xác nhận đơn hàng và địa chỉ nhận hàng.
+                        Hàng sẽ được chuyển đến tận nơi khách hàng yêu cầu từ 1 đến 7 ngày và hoàn toàn miễn phí cước vận chuyển. Quý khách thanh toán trực tiếp với nhận viên giao hàng.</h6>
+                    <a class="btn unique-color btn-rounded center" href="product-list.html" target="_blank">Mua hàng ngay!</a>
+                </div>
+            </div>
+        </section>
+        <!--Section: Buy products ./-->
+
+
+        <!--Section: Contact-->
+        <section id="contact">
+            <div class="divider-new">Liên hệ với chúng tôi</div>
+            <div class="row">
+                <!-- Contact details -->
+                <div class="row">
+                    <form class="col-md-7 hidden-xs">
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <input id="your-name" type="text" class="validate">
+                                <label for="your-name">Tên của bạn</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <input id="your_email" type="email" class="validate">
+                                <label for="your_email">Email của bạn</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col-md-12">
+                                <textarea id="your_message" class="validate materialize-textarea" length="120"></textarea>
+                                <label for="your_message">Nội dung của bạn</label>
+                            </div>
+                        </div>
+                        <a class="btn unique-color">Gửi</a>
+                    </form>
+
+                    <div class="col-md-5 text-center">
+                        <ul>
+                            <li><a class="btn-floating btn-small blue-grey wow fadeInRight"
+                                   data-wow-delay="0.2s"><i class="material-icons">pin_drop</i></a>
+                                <p>Hà Nội, Việt Nam</p>
+                            </li>
+
+                            <li><a class="btn-floating btn-small blue-grey wow fadeInRight"
+                                   data-wow-delay="0.4s"><i class="material-icons">phone</i></a>
+                                <p>+ 012 345 6789</p>
+                            </li>
+
+                            <li><a class="btn-floating btn-small  blue-grey wow fadeInRight"
+                                   data-wow-delay="0.6s"><i class="material-icons">email</i></a>
+                                <p>doanthuymai166@gmail.com</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Section: Contact ./-->
+    </div>
+</main>
+<!--Main Container ././-->
+
+
+<!--Quick Look-->
+<div class="modal fade" id="quick-look" role="dialog">
+    <div class="modal-dialog modal-qlook"  style="height: auto; width: auto">
+
+        <!--Modal content-->
+        <div class="modal-content">
+            <!-- Modal header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title text-center">Xem nhanh</h4>
+            </div>
+            <!-- /.Modal conheaderent-->
+
+            <!-- Modal body-->
+            <div class="modal-body">
+                <!--Product Panel-->
+                <div class="container">
+                    <div class="product-panel">
+                        <div class="row">
+                            <!--First column: carousel gallery-->
+                            <div class="col-xs-12 col-sm-6 col-lg-3">
+                                <!-- Carousel -->
+                                <div id="car-gall" class="carousel slide carousel-fade carousel-thumbnails carousel-gallery">
+                                    <!--Main image-->
+                                    <div class="col-xs-8">
+                                        <!-- Wrapper for slides -->
+                                        <div class="carousel-inner z-depth-1 hoverable" role="listbox">
+                                            <!-- First slide -->
+                                            <div class="item active">
+                                                <img src="img/display-product.jpg" alt="slide1">
+                                            </div>
+                                            <!-- /.item -->
+
+                                            <!-- Second slide -->
+                                            <div class="item">
+                                                <img src="img/slide1-min.jpg" alt="slide2">
+                                            </div>
+                                            <!-- /.item -->
+
+                                            <!-- Third slide -->
+                                            <div class="item">
+                                                <img src="img/slide-min.jpg" alt="slide3">
+                                            </div>
+                                            <!-- /.item -->
+                                        </div>
+                                        <!-- /.carousel-inner -->
+                                    </div>
+                                    <!--/.Main image-->
+                                </div>
+                                <!-- /.carousel -->
+                            </div>
+                            <!--/.First column: carousel gallery-->
+
+                            <!--Second column: product details-->
+                            <div class="col-xs-12 col-sm-6 col-lg-5 text-center">
+                                <!--Title-->
+                                <h4>Dâu tây<span class="label deep-purple darken-2" style="margin-left: 2em ">-20%</span></h4>
+                                <!--Price-->
+                                <div class="price">
+                                    <p class="green-text medium-500">50.000 vnđ<br><span class="discount light-300 black-text">70.000 vnđ</span></p>
+                                </div>
+
+                                <!--Quantity-->
+                                <div class="row">
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" >Số lượng (kg):</h6></div>
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><input id="number" class="col col-md-6 col-xs-6 col-lg-6" type="number" value="1" class="quantity"></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" >Thành tiền: </h6></div>
+                                    <div class="col col-md-6 col-xs-6 col-lg-6"><h6 class="h6-responsive" > $500 </h6></div>
+                                </div>
+                                <a class="btn btn-default">Cho vào giỏ hàng</a>
+                                <!--Wish list button-->
+                                <a class="btn-floating btn-small red top-btn" data-toggle="tooltip" data-placement="top" data-original-title="Yêu thích sản phẩm này"><i class="material-icons">favorite</i></a>
+                                <br>
+                                <hr>
+                                <!--Social media-->
+                                <a data-toggle="tooltip" data-original-title="Chia sẻ trên Facebook" class="btn-floating btn-small fb-bg " style="background-color: #3B5998"><i class="fa fa-facebook"> </i></a>
+                                <a data-toggle="tooltip" data-original-title="Gửi tin nhắn cho người bán" class="btn-floating btn-small email-bg " style="background-color: #6A1B9A"><i class="fa fa-envelope-o"> Gửi tin cho người bán </i></a>
+                                <hr>
+                            </div>
+                            <!--Second column: product details-->
+
+                            <!--Third column: product description-->
+                            <div class="col-xs-12 col-sm-12 col-lg-4">
+                                <h5 class="h5-responsive text-center">Mô tả ngắn</h5>
+                                <hr>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non porro dolore est beatae iste deleniti eveniet numquam recusandae, deserunt temporibus enim libero magni reiciendis veniam corporis ut atque aperiam rem?</p><br>
+                                <div class="text-center">
+                                    <a class="btn btn-default btn-lg " data-toggle="modal" data-target="#product-details">Xem chi tiết</a>
+                                </div>
+                            </div>
+                            <!--/.Third column: product description-->
+                        </div>
+                    </div>
+                </div>
+                <!--/.Product Panel-->
+            </div>
+            <!-- /.Modal body-->
+            <!--Modal footer: close button-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div>
+            <!--/.Modal footer: close button-->
+        </div>
+        <!-- Modal content-->
+    </div>
+</div>
+<!--/.Modal: QUick look -->
+
+
+<!--Modal Login-->
+<div class="modal fade" id="modal-login" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4><i class="fa fa-user"></i>Đăng nhập</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+                <div class="row">
+                    <form class="col-md-12">
+                        <div class="row">
+                            <div class="input-field">
+                                <i class="material-icons prefix">email</i>
+                                <input id="icon_email" type="tel" class="validate">
+                                <label for="icon_email">Email</label>
+                            </div>
+
+                            <div class="input-field">
+                                <i class="material-icons prefix">lock</i>
+                                <input id="password" type="password" class="validate">
+                                <label for="password">Mật khẩu</label>
+                            </div>
+                            <div class="text-center">
+                                <button type="button" class="btn btn-primary ">Đăng nhập</button>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal">X</button>
+                <div class="options">
+                    <p>Chưa có tài khoản? <a href="#">Đăng ký</a></p>
+                    <p>Quên <a href="#">mật khẩu?</a></p>
+                </div>
+            </div>
+            <!--/.Footer-->
+        </div>
+        <!-- /.Modal content-->
+    </div>
+</div>
+<!-- Modal Login ./-->
+
+
+
+
+
+<!--Fixed Navigation on Right Side-->
+<section class="nav-on-right">
+
+</section>
+
+
+<!--footer-->
+<footer class="page-footer black center-on-small-only">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">Here you can use rows and columns here to organize your footer
+                    content.</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer-copyright text-center rgba-black-strong wow fadeIn">
+        <div class="container-fluid">
+            © 2016 Copyright: <a href="#"> thanglong.edu.vn </a> || with Material design.
+        </div>
+    </div>
+</footer>
+
+
+<!--Animations-->
+
+<script src="js/lib/materialize/js/materialize.min.js"></script>
+<script>
+    new WOW().init();
+        $('.carousel').carousel({
+            wrap: true
+        });
+</script>
+
+
+</body>
+
+</html>

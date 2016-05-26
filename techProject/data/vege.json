@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "Nấm rơm",
+    "avai": 10,
+    "cate": "Rau củ",
+    "thumb":"img/img/nam-rom.jpg",
+    "desc": "Chế biến nấm rơm thì có cả trăm kiểu, đây là loại nấm rất dễ nấu, dễ ăn, dễ phối hợp. Đừng ngạc nhiên khi các món dưới đây đều để ăn chay, nấm rơm thực sự quá tuyệt nếu bạn muốn thanh lọc cơ thể, tĩnh. Với lượng dinh dưỡng nhiều tới vậy mà nấm rơm được sử dụng nhiều trong các chế phẩm y học, các loại thực phẩm chức năng nhằm giúp cơ thể con người  trị liệu nhiều bệnh tật như các chứng rối loạn chuyển hóa, nội tiết như béo phì, rối loạn lipid máu, xơ vữa động mạch, tăng huyết áp và đái tháo đường..., lượng chất sơ đồng thời cũng điều hòa tiêu hóa, thanh lọc cơ thể, bảo vệ gan, thận, đường ruột, đồng thời giúp giảm cân hiệu quả. Ngoài ra, nấm rơm còn chứa 7 loại a-xít amin mà cơ thể không tổng hợp được.",
+    "price": "33.000 đ/khay",
+    "season":"xuan",
+    "rate": 5,
+    "sale": "10%"
+  },
+  {
+    "id": 2,
+    "name": "Hành tây to",
+    "avai": 20,
+    "cate": "Rau củ",
+    "thumb": "img/img/hanh-tay.jpg",
+    "price": "30.000 đ/kg",
+    "desc": "Hành tây là một loại củ nhiều chất dinh dưỡng, được chị em biến tấu nhiều món ngon chiêu đãi gia đình. Hành tây được biết đến có tác dụng kháng khuẩn. Vị hăng của hành tây có công dụng lưu thông máu, giảm sốt hiệu quả.Chất chông oxy hóa trong hành tây ngăn ngừa được quá trình tích tụ chất béo."
+    "rate": 4,
+    "sale": "10%"
+  },
+  {
+    "id": 3,
+    "name": "Ớt Chuông Đà Lạt",
+    "avai": 20,
+    "cate": "Rau củ",
+    "thumb": "https://i.ytimg.com/vi/BhegbwWLiNk/maxresdefault.jpg",
+    "desc": "Ớt chuông Đà Lạt được xếp là một trong những loại rau củ chứa nhiều chất xơ mà không có nguy cơ dư thừa lượng calo hấp thụ.",
+    "price": "50.000 đ/kg",
+    "rate": 5,
+    "sale": "10%"
+  },
+  {
+    "id": 4,
+    "name": "Củ cải đỏ",
+    "avai": 10,
+    "cate": "Rau củ",
+    "thumb": "http://yeunoitro.net/wp-content/uploads/2015/09/cu-cai-do-lam-nguyen-lieu-cho-mon-canh-ham-cu-cai-do.jpg",
+    "desc": "Củ cải đỏ là một trong những loại rau củ có tác dụng phòng chống ung thư và kháng viêm hiệu quả cao.",
+    "price": "80.000 đ/kg",
+    "rate": 5,
+    "sale": "10%"
+  },
+  {
+    "id": 5,
+    "name": "Cà rốt bi",
+    "avai": 15,
+    "cate": "Rau củ",
+    "thumb": "http://eothon.vn/wp-content/uploads/2014/08/Meo-nho-giup-ban-nhan-biet-duoc-mot-so-loai-trai-cay-trung-quoc-7.jpg",
+    "desc": "Cà rốt có rất nhiều tác dụng đối sức khỏe và giàu dinh dưỡng được trồng tại Đà Lạt được nhiều khách hàng đô thị rất ưa chuộng.",
+    "price": "80.000 đ/kg",
+    "rate": 5,
+    "sale": "10%"
+  },
+  {
+    "id": 6,
+    "name": "Bưởi da xanh",
+    "avai": 40,
+    "cate": "Trái cây",
+    "thumb": "http://giongcay.net/uploads/news/buoi-da-xanh-1.jpg",
+    "desc": "Bưởi da xanh có dạng hình cầu, mỗi quả nặng khoảng 1,2 - 2,5 kg/1 trái. Bưởi da xanh khi chín có vỏ trái màu xanh hoặc vàng nhạt, vỏ rất mỏng và dễ lột. Tép bưởi bó chặt, màu hồng, mùi thơm, vị ngọt thanh mát, không hạt.",
+    "price": "80.000 đ/kg"
+  },
+  {
+    "id": 7,
+    "name": "Cam sành",
+    "avai": 40,
+    "cate": "Trái cây",
+    "thumb": "http://dacsancamvinh.net/wp-content/uploads/2015/11/cam-sanh.jpg",
+    "desc": "Cam sành giúp ngăn ngừa một số loại khuyết tật bẩm sinh, tăng sức đề kháng và giúp sản xuất các tế bào máu khỏe mạnh. Cam sành là một giống cây ăn quả thuộc chi Cam chanh phân bố rộng khắp Việt Nam từ Tuyên Quang , Hà Giang ,Yên Bái tới Vĩnh Long , Tiền Giang ,Cần Thơ nhưng nhìn chung cam sành thích hợp với vùng đất phù sa cổ màu mỡ,khí hậu mát ẩm.",
+    "price": "85.000 đ/kg"
+  },
+  {
+    "id": 8,
+    "name": "Dâu tây",
+    "avai": 30,
+    "cate": "Trái cây",
+    "thumb": "http://blogcaycanh.vn/files/large/088cce389678c12",
+    "desc": "Dâu tây Đà Lạt nổi tiếng thơm mát,tươi sạch là đặc sản của vùng cao nguyên này.Giá dâu tây của chúng tôi tốt nhất Hà Nội.Dâu tây Đà Lạt thích hợp với loại đất thịt nhẹ, hàm lượng chất hữu cơ cao, đất giữ ẩm nhưng thoát nước tốt  độ pH từ 6-7",
+    "price": "450.000 đ/kg"
+  },
+  {
+    "id": 9,
+    "name": "Gà Ri Thả Đồi",
+    "avai": 30,
+    "cate": "Thực phẩm",
+    "thumb": "http://lamnong.net/wp-content/uploads/2015/11/ga-ri-tha-vuon1.jpg",
+    "desc": "Gà Ri Bóc Trứng - Đây là hướng đi khó khăn, gian nan và phải đầu tư nhiều nhất. Yêu cầu có kiến thức bài bản, cũng như nhiều va vấp trong công việc. Gà ri thích hợp với nuôi chăn thả do chịu đựng tốt,điều kiện thức ăn nghèo dinh dưỡng không là vấn đề.Gà ri đẻ rất khá,100 trứng/1 năm,mỗi lứa khoảng 15-20 quả",
+    "price": "250.000 đ/kg"
+  },
+  {
+    "id": 10,
+    "name": "Gà Đen",
+    "avai": 30,
+    "cate": "Thực phẩm",
+    "thumb": "http://vuonchimviet.com/wp-content/uploads/resized_IMG_2884.jpg",
+    "desc": "Gà đen nhập trên bản ở Sơn La là giống gà đặc sản,quý hiếm. Gà đen  có giá trị dinh dưỡng cao,theo Đông y, loại gà này vị ngọt, mặn, tính bình hơi ấm, hương vị thơm, tính ẩm, không độc, có công hiệu từ bổ can thận, ích khí bổ huyết, tư âm thanh nhiệt, điều kinh hoạt huyết, chữa rong huyết… Thịt gà đen  còn chứa các acid amin cần thiết cho cơ thể gồm lysine, methionine, histidine, giúp điều tiết khả năng miễn dịch cơ thể và chống lão hóa, nên xưa được gọi là gà thuốc.",
+    "price": "350.000 đ/kg"
+  },
+  {
+    "id": 11,
+    "name": "Thịt Bắp Bò",
+    "avai": 20,
+    "cate": "Thực phẩm",
+    "thumb": "http://webnauan.com/wp-content/uploads/2014/02/bap-bo-luoc-2.jpg",
+    "desc": "Thịt bắp bò ngọt, thơm, là phần thịt được lấy ra từ Chân giò của bò, thường dai và có nhiều mô nối. thịt bắp bò gié Kim Bôi, thịt bò tươi, thịt bò sạch Hà Nội, thịt bò ngon mềm thơm. Freeship trong nội thành",
+    "price": "450.000 đ/kg"
+  },
+  {
+    "id": 12,
+    "name": "Kim Chi Hàn Quốc",
+    "avai": 30,
+    "cate": "Thực phẩm chế biến sẵn",
+    "thumb": "http://yeunoitro.net/wp-content/uploads/kim-chi.jpg",
+    "desc": "Thành phần: gồm Cải thảo (85%), ớt bột, củ cải trắng, hành tây, cà rốt, hành lá hẹ, gừng, tỏi, nước mắm, muối, đường, chất điều vị (621). Kim chi Hàn Quốc áp dụng đồng thời 3 hệ thống quản lý an toàn vệ sinh thực phẩm theo tiêu chuẩn quốc tế: HACCP , ISO 22000-2005, HALAL",
+    "price": "40.000 đ/hộp"
+  },
+  {
+    "id": 9,
+    "name": "Chả Ước Lễ",
+    "avai": 30,
+    "cate": "Thực phẩm chế biến sẵn",
+    "thumb": "http://resources.nhommua.com/ftpproduct/20150/cha-que%20(1).jpg",
+    "desc": "Chà giò thôn Ước Lễ -- một làng có truyền thống làm giò chả ngon nổi tiếng thuộc xã Tân Ước, huyện Thanh Oai, Hà Nội.Giò chả thông Ước Lễ nổi tiếng và được nhắc đến nhiều hơn cả. Nếu ai đã một lần thưởng thức giò Ước Lễ, có lẽ người đó khó quên được vị ngọt, mềm, mà vẫn giòn thơm rất riêng của loại giò này.",
+    "price": "100.000 đ/kg",
+    "rate": 5,
+    "sale": "10%"
+  }
+
+]
